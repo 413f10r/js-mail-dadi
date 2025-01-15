@@ -14,11 +14,21 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 Buon lavoro e buon divertimento! :slightly_smiling_face*/
 
+//assegnazione num random
+let dadoPlayer1 = (Math.floor(Math.random() * 6) + 1);
+console.log(" Player1 ha tirato :", dadoPlayer1)
 
-let player1 = numDado
 
-let playerPc = numDado
+let dadoPc = (Math.floor(Math.random() * 6) + 1);
+console.log(" Pc ha tirato :", dadoPc)
 
-let numDado = (Math.floor(Math.random() * 7);
 
-//if
+if (dadoPc > dadoPlayer1) {
+    console.log(`${dadoPc} è il numero maggiore , vince  Pc`)
+
+} else if (dadoPc < dadoPlayer1) {
+    console.log(`${dadoPlayer1} è il numero maggiore , vince player1`)
+
+} else {
+    console.log('Parità')
+}
