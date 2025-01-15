@@ -16,11 +16,37 @@ Consigli del giorno:
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 Buon lavoro e buon divertimento! :slightly_smiling_face*/
 
-const MailInviti = [
+const list = [
     'pippo@gmail.it',
     'pluto@gmail.it',
     'minnie@gmail.it',
-    'paperino@gmail.it'
+    'paperino@gmail.it',
+    'topolino@gmail.it',
+    'tom@gmail.it',
+    'gerry@gmail.it',
+    'paperina@gmail.it',
+    'paperone@gmail.it',
+    'paperinik@gmail.it',
+
+
 ]
 
-let Mail = prompt()
+let userMail = prompt(" Inserisci la tua e-mail: ", 'pippo@gmail.it');
+
+
+let isMailInList = true;  //imposto una variabile booleana 
+
+//ciclo for 
+for (let i = 0; i <= list.lenght; i++) {
+
+    if (userMail == list[i]) {
+        isMailInList = false
+    }
+}
+
+if (isMailInList) {
+    console.log("l' email utilizzata  è presente nella lista invitati")
+} else {
+    console.log("l' email utilizzata non è presente nella lista invitati")
+
+}
