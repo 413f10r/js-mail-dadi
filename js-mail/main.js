@@ -34,19 +34,19 @@ const list = [
 let userMail = prompt(" Inserisci la tua e-mail: ", 'pippo@gmail.it');
 
 
-let isMailInList = true;  //imposto una variabile booleana 
+let isMailInList = false;  //imposto una variabile booleana 
 
 //ciclo for 
 for (let i = 0; i <= list.lenght; i++) {
 
     if (userMail == list[i]) {
-        isMailInList = false
+        isMailInList = true
     }
 }
 
 if (isMailInList) {
-    console.log("l' email utilizzata  è presente nella lista invitati")
-} else {
     console.log("l' email utilizzata non è presente nella lista invitati")
+} else {
+    console.log("l' email utilizzata è presente nella lista invitati")
 
 }
